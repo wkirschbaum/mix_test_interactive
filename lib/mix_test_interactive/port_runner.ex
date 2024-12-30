@@ -57,7 +57,7 @@ defmodule MixTestInteractive.PortRunner do
         {["run", "-e"], args}
       end
 
-    ["do"] ++ run ++ [enable_command, ",", task] ++ task_args
+    ["do"] ++ run ++ [enable_command, "+", task] ++ task_args
   end
 
   defp zombie_killer do
